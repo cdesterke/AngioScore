@@ -1,11 +1,12 @@
 # AngioScore
-R package which allowed to query angiogenesis relations in Pubmed for a gene list
+R package which allow to query angiogenesis relations in Pubmed for a gene list
 
 - 1/Load a gene list column for exemple set$gene to query relations in Pubmed between these genes and angiogenesis function
 - 2/Compute an angioscore 
 - 3/plot the results of Angiogenesis Citations and Angioscores as a scatterplot
 
 USAGE:
+#install library from local zip files : AngioScore_0.1.0.zip
 - attach(set)
 - data<-query(set$gene)
 - final<-AngioScore(data)
