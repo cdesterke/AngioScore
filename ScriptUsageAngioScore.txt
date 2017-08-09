@@ -1,0 +1,13 @@
+source("Utilities.r")
+source("AngioQuery.r")
+source("ComputeAngioScoreAfterQuery.r")
+source("AngioPlot.r")
+set<-read.table("set.txt",header=T)
+
+attach(set)
+
+data<-query(set$gene)
+
+final<-AngioScore(data)
+
+angioplot(final)
